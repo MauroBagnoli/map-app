@@ -1,0 +1,6 @@
+.map {
+  width: 100vw;
+  /* position: fixed; */
+  height: 100vh;
+  animation: fadeIn 2s ease-in-out;
+}
