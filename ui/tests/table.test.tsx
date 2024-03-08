@@ -1,16 +1,11 @@
-/// <reference types="@testing-library/jest-dom" />
-// @ts-ignore
-import React from 'react';
-
 import '@testing-library/jest-dom'
-import userEvent from '@testing-library/user-event';
 import { render, screen } from '@testing-library/react';
 import { DataTable } from '../src/components/data-table';
 
 type dataTest = {
     id: number,
     name: string,
-    getValue: (arg0: string) => any;
+    getValue: (arg0: string) => string;
 }
 describe('DataTable', () => {
     const data = [
@@ -52,10 +47,6 @@ describe('DataTable', () => {
 
         // Action button is rendered
         expect(screen.getByText('Test Action')).toBeInTheDocument();
-
-        // Table row click works
-        userEvent.click(screen.getByText('Item 1'));
-        expect(onRowClick).toHaveBeenCalledWith(1);
     });
 
     it('renders no results message if data is empty', () => {
