@@ -1,4 +1,4 @@
-import { Body, Controller, Get, NotFoundException, Param, Post } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { DeviceService } from './device.service';
 
 @Controller('devices')
