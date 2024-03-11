@@ -1,4 +1,4 @@
-## Frontend for Vodafone with Typescript & React
+## Frontend with Typescript & React
 
 1. Install the dependencies:
 

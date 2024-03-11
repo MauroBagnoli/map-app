@@ -9,7 +9,7 @@ import { DeviceDetails } from './pages/device-details';
 function App() {
     return (
         <Router>
-            <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
                 <DeviceProvider>
                     <NavBar />
                     <Routes>

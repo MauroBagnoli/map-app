@@ -6,7 +6,7 @@ import {
     NavigationMenuList,
 } from '@/components/ui/navigation-menu'
 
-import { default as VodafoneLogo } from '../../assets/vodafone-logo.svg?react';
+import { default as Logo } from '../../assets/logo.svg?react';
 import { ModeToggle } from './mode-toggle';
 
 export function NavBar() {
@@ -15,7 +15,7 @@ export function NavBar() {
             <NavigationMenu className='flex justify-between max-w-screen-2xl'>
                 <NavigationMenuList className='gap-5'>
                     <div className='h-5'>
-                        <VodafoneLogo className='w-5 h-5' />
+                        <Logo className='w-5 h-5' />
                     </div>
                     <NavigationMenuItem>
                         <Link to='/'>HOME</Link>

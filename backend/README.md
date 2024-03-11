@@ -1,4 +1,4 @@
-## Backend for Vodafone with Nest.js & GraphQL
+## Backend with Nest.js & GraphQL
 
 ## Installation
 
