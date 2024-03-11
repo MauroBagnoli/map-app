@@ -1,6 +1,6 @@
 # Map Application
 
-This repository hosts the code for a map application, consisting of a frontend built with TypeScript and React, and a backend setup.
+This repository hosts the code for a map application, consisting of a frontend built with TypeScript and React, and a backend with TypeScript and Nest.js.
 
 ## Getting Started
 
