@@ -1,23 +1,31 @@
-## Vodafone Map Application
+# Vodafone Map Application
 
 This repository hosts the code for a map application designed for Vodafone, consisting of a frontend built with TypeScript and React, and a backend setup (details not provided). This application is structured to facilitate development, testing, and deployment processes.
 
-# Getting Started
+## Getting Started
 
-# Prerequisites
-Node.js
+This section guides you through the prerequisites, installation, and setup procedures to get the map application up and running on your local machine.
 
-# Installation and Running
+### Prerequisites
 
-# Frontend Setup:
+Before you begin, ensure the following prerequisites are met:
 
-- Navigate to the ui folder.
-- Follow instructions in README.md file
+- **Node.js**: Version 18 or higher. Node.js is essential for running the development server and managing project dependencies. You can download it from [the official Node.js website](https://nodejs.org/).
 
-# Backend Setup:
+### Installation and Running
 
-- Navigate to the backend folder.
-- Follow instructions in README.md file
+#### Frontend Setup
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+1. **Prepare the Environment:**
+   - Navigate to the `ui` folder within the project directory.
+   - Open the `README.md` file and follow the detailed instructions provided for setting up the frontend environment.
+
+#### Backend Setup
+
+1. **Configure the Backend:**
+   - Move to the `backend` folder.
+   - Refer to the `README.md` file for comprehensive instructions on configuring and running the backend services.
+
+## License
+
+This project is open-sourced under the MIT License. For more information on licensing terms and conditions, please consult the `LICENSE.md` file included in this repository.
