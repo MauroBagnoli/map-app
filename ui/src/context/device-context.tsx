@@ -15,6 +15,7 @@ interface DeviceContextType {
     fetchDevices: () => Promise<void>;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-empty-function
 const DeviceContext = createContext<DeviceContextType>({ devices: [], fetchDevices: async () => { } });
 
 const DeviceProvider: FC<{ children: ReactNode }> = ({ children }) => {

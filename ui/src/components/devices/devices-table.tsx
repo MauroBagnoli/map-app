@@ -3,13 +3,12 @@ import { CaretSortIcon } from "@radix-ui/react-icons"
 import { ColumnDef } from "@tanstack/react-table"
 import { Button } from "@/components/ui/button"
 import { Device, DeviceContext } from "@/context/device-context"
-import { DataTable } from "../data-table"
+import { DataTable } from "../tables/data-table"
 import { useContext, useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { NewDeviceDialog } from "./new-device-dialog"
 
-
-export const columns: ColumnDef<Device>[] = [
+const columns: ColumnDef<Device>[] = [
     {
         accessorKey: "id",
         header: "id",

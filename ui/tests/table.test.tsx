@@ -1,30 +1,31 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react';
-import { DataTable } from '../src/components/data-table';
+import { DataTable } from '../src/components/tables/data-table';
+import { ColumnDef } from '@tanstack/react-table';
 
-type dataTest = {
-    id: number,
+interface TestData {
     name: string,
-    getValue: (arg0: string) => string;
+    id: number,
 }
+
 describe('DataTable', () => {
-    const data = [
+    const data: TestData[] = [
         { id: 1, name: 'Item 1'},
         { id: 2, name: 'Item 2' },
     ];
 
-    const columns = [
+    const columns: ColumnDef<TestData>[] = [
         {
             accessorKey: "id",
             header: "id",
-            cell: ({ row }: { row: dataTest }) => (
+            cell: ({ row }) => (
                 <div className="capitalize">{row.getValue("id")}</div>
             ),
         },
         {
             accessorKey: "name",
             header: "name",
-            cell: ({ row }: { row: dataTest }) => (
+            cell: ({ row }) => (
                 <div className="capitalize">{row.getValue("name")}</div>
             ),
         },

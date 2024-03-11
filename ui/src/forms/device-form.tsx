@@ -105,4 +105,4 @@ export function DeviceForm({ setDialogOpen }: { setDialogOpen: (value: boolean) 
         </Form>
 
     )
-};
+}

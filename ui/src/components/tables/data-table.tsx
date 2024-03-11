@@ -5,6 +5,7 @@ import {
     ChevronDownIcon,
 } from "@radix-ui/react-icons"
 import {
+    ColumnDef,
     ColumnFiltersState,
     SortingState,
     VisibilityState,
@@ -32,12 +33,15 @@ import {
     TableRow,
 } from "@/components/ui/table";
 
-export function DataTable({ data, columns, onRowClick, actions }: {
-    data: any,
-    columns: any[],
-    onRowClick: (id: string) => void,
-    actions?: React.ReactNode
-}) {
+interface DataTableProps<T> {
+    data: T[];
+    columns: ColumnDef<T>[];
+    onRowClick: (id: string) => void;
+    actions?: React.ReactNode;
+}
+
+
+export function DataTable<T>({ data, columns, onRowClick, actions }: DataTableProps<T>) {
     const [sorting, setSorting] = React.useState<SortingState>([])
     const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
         []

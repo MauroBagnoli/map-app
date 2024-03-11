@@ -1,4 +1,3 @@
-/// <reference types='vite-plugin-svgr/client' />
 import { Link } from 'react-router-dom';
 
 import {
@@ -6,9 +5,9 @@ import {
     NavigationMenuItem,
     NavigationMenuList,
 } from '@/components/ui/navigation-menu'
-import { ModeToggle } from './mode-toggle'
 
-import { default as VodafoneLogo } from '../assets/vodafone-logo.svg?react';
+import { default as VodafoneLogo } from '../../assets/vodafone-logo.svg?react';
+import { ModeToggle } from './mode-toggle';
 
 export function NavBar() {
     return (
@@ -29,4 +28,4 @@ export function NavBar() {
             </NavigationMenu>
         </div>
     )
-};
+}

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Devices from './pages/devices';
-import { NavBar } from './components/nav-bar';
-import { ThemeProvider } from './components/theme-provider';
+import { NavBar } from './components/layout/nav-bar';
+import { ThemeProvider } from './components/layout/theme-provider';
 import { DeviceProvider } from './context/device-context';
 import { DeviceDetails } from './pages/device-details';
 
